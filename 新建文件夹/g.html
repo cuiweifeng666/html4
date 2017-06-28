@@ -1,0 +1,236 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>竞猜游戏</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- qq强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+
+    <!-- uc强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- qq强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- uc应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- qq应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+        var t = $(document).width()/10;
+        $("html").css("font-size",t);
+        document.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+        });
+        document.ontouchmove = function(e){ 
+          e.preventDefault(); 
+        };
+
+    })
+    </script>
+  </head>
+  <body id="">
+      <img class="bg" src="images/head-bg.jpg">
+      <div class="bg-color"></div>
+      <div class="diag-win">
+          <div class="diag-text">签到奖励</div>
+          <div class="diag-img">
+              <img src="../images/Bitmap-Copy.png" id="" class="diag-gold" />
+              <i>+288</i>
+          </div>
+      </div>
+      <div class="diag-sign">
+          <b class="diag-title">签到第<i>2</i>天</b>
+          <img src="../images/" id="" class="day-close" />
+          <div class="diag-content">
+              <div class="diag-days">
+                  <div class="day">第一天</div>
+                  <img src="../images/" id="" class="" />
+                  <p>288</p>
+              </div>
+              <div class="diag-days">
+                  <div class="day">第一天</div>
+                  <img src="../images/" id="" class="" />
+                  <p>288</p>
+              </div>
+              <div class="diag-days">
+                  <div class="day">第一天</div>
+                  <img src="../images/" id="" class="" />
+                  <p>288</p>
+              </div>
+              <div class="diag-days">
+                  <div class="day">第一天</div>
+                  <img src="../images/" id="" class="" />
+                  <p>288</p>
+              </div>
+              <div class="content-02">
+                   <div class="diag-days">
+                      <div class="day">第一天</div>
+                      <img src="../images/" id="" class="" />
+                      <p>288</p>
+                  </div>
+                  <div class="diag-days">
+                      <div class="day">第一天</div>
+                      <img src="../images/" id="" class="" />
+                      <p>288</p>
+                  </div>
+                  <div class="diag-days">
+                      <div class="day">第一天</div>
+                      <img src="../images/" id="" class="" />
+                      <p>288</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="diag-goods">
+           <div class="text">恭喜获得 <b>2888</b>彩豆！</div>
+           <div class="text-plain">每日猜猜猜,乐趣享无穷,大奖送不停</div>
+      </div>
+      <div class="diag-help">
+           <div class="text">恭喜获得 <b>2888</b>彩豆救济金</div>
+           <div class="time">今日还剩余<b>2</b>次</div>
+      </div>
+   <div id="wrapper">
+    <div class="list">
+     <header class="head-first-text">
+        竞猜游戏
+     </header>
+     <section  >
+        <header class="head-first clearfix">
+          <div class="guess-header fl show">
+            <a class="header-border fl" href="">
+                <img src="images/head-pi.png">
+            </a>
+            <a href="http://m.cjcp.com.cn/index.php?m=Account&a=login" id="login" class="fl">
+              <img src="images/Group2.png" class="fl">
+            </a>
+            <div class="myGuess fl">
+              <div class="myText clearfix">
+                  <b class="fl">我爱竞猜牌</b>
+                  <img src="images/Group3.png" class="fl">
+              </div>
+              <div class="gold clearfix ">
+                  <span class="gold-bg fl"></span>
+                  <span class="mongy-group-01 fl">
+                      <img src="images/Bitmap-Copy.png" id="gold-small" class="fl">
+                      <small id="money-change" class="fl">123000</small>
+                  </span>
+                  <span class="mongy-group-02 fl">
+                      <img src="images/gold.png" id="gold-big" class="fl">
+                      <small id="gold-change" class="fl">123000</small>
+                  </span>
+                  <img src="images/fill.png" class="more fl">
+              </div>
+            </div>
+          </div>
+          <nav id="head-nav" class="head-right fr">
+              <a href="" class="head-duty fr righ">
+                <img src="images/rw.png " class="fr">
+                <b class="fr">任务</b>
+              </a>
+              <a href="" class="head-prize fr righ">
+                <img src="images/dj.png" class="fr">
+                <b class="fr">兑奖</b>
+              </a>
+              <a href="" class="head-Ranking fr righ">
+                <img src="images/ph.png" class="fr">
+                <b class="fr">排行</b>
+              </a>
+          </nav>
+        </header>
+        <div id="banner" class="swiper-container">
+          <div class="pic-banner clearfix swiper-wrapper">
+            <a href="javascript:;" class="fl swiper-slide">
+              <img src="images/banner1.png" class="pic01 fl">
+            </a>
+            <a href="javascript:;"  class="fl swiper-slide">
+              <img src="images/banner2.png" class="pic02 fl">
+             </a>
+             <a href="javascript:;"  class="fl swiper-slide">
+              <img src="images/banner3.png" class="pic03 fl">
+             </a>
+          </div>
+          <div class="swiper-pagination">
+              <span class="white-circle fl"></span>
+              <span class="white-circle fl"></span>
+              <span class="white-circle fl"></span>
+          </div>
+        </div>
+        <div id="head-content">
+            <div class="win-prize clearfix">
+                <img class="fl win-text" src="images/win.png">
+                <b class="fl win-show">恭喜：“曾哥”PC彩蛋竞猜中赢得888彩豆</b>
+            </div>
+            <ul class="head-list ">
+              <li class="list-link clearfix border-1px">
+                <a href="javascript:;" class="list one fl">
+                  <img src="images/crazy.png" id="" class=" fl"/>
+                </a>
+                <span class="pic-line fl border-left"></span>
+                <a href="javascript:;" class="list two fl out">
+                  <img src="images/flower.png" id="" class=" fl"/>
+                </a>
+              </li>
+               <li class="list-link clearfix border-1px">
+                <a href="javascript:;" class="list one fl">
+                  <img src="images/gold-circle.png" id="" class="fl"/>
+                </a>
+                <span class="pic-line fl border-left"></span>
+                <a href="javascript:;" class="list two three">
+                  <img src="images/happy.png" id="" class="l2-1"/>
+                </a>
+              </li>
+              <li class="list-link clearfix border-1px">
+                <a href="javascript:;" class="list one fl  ">
+                  <img src="images/gray.png" id="" class=" fl four"/>
+                </a>
+                <span class="pic-line fl border-left"></span>
+                <a href="javascript:;" class="list two fl out">
+                  <img src="images/handle.png" id="" class=" fl five"/>
+                </a>
+              </li>
+              <li class="list-link clearfix border-1px">
+                <a href="javascript:;" class="list one fl">
+                  <img src="images/turntable.png" id="" class=" fl six"/>
+                </a>
+                <span class="pic-line fl border-left"></span>
+              </li>
+            </ul>
+        </div>
+     </section>
+     <footer>
+       <nav class="clearfix">
+         <a href="" class="fl">
+           联系我们
+         </a>
+          <a href="" class="fl">
+           关于我们
+         </a>
+          <a href=""    class="fl"   >
+           游戏攻略
+         </a>
+          <div class="footer-bg"></div>
+       </nav>
+
+     </footer>
+   </div>
+    </div>
+      
+     <script type="text/javascript" src="js/head.js"></script>
+  </body>
+  </html>
